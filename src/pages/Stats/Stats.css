@@ -1,0 +1,26 @@
+.stats { padding: 10px 0; }
+.stats h2 { color: #be185d; }
+
+.stats-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+  gap: 16px; 
+  margin-top: 20px; 
+}
+
+.stat-card { 
+  background: white; 
+  padding: 24px; 
+  border-radius: 16px; 
+  text-align: center; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04); 
+  border-top: 6px solid #f472b6; 
+}
+
+.stat-card.total { border-top-color: #ec4899; }
+.stat-card.milik { border-top-color: #34d399; }
+.stat-card.baca  { border-top-color: #fbbf24; }
+.stat-card.beli  { border-top-color: #a78bfa; }
+
+.stat-num { display: block; font-size: 36px; font-weight: bold; margin-bottom: 4px; color: #831843; }
+.stat-label { font-size: 13px; font-weight: 600; color: #9d174d; }

@@ -1,0 +1,46 @@
+.book-list { display: flex; flex-direction: column; gap: 12px; }
+
+.book-card { 
+  background: white; 
+  border-radius: 12px; 
+  padding: 16px 20px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  border-left: 6px solid #f472b6; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04); 
+  transition: 0.2s;
+}
+
+.book-card:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(219, 39, 119, 0.1); }
+
+/* Warna status */
+.book-card.milik { border-left-color: #34d399; }
+.book-card.baca  { border-left-color: #fbbf24; }
+.book-card.beli  { border-left-color: #a78bfa; }
+
+.book-info h3 { margin: 0 0 4px; font-size: 16px; color: #831843; }
+.author { margin: 0 0 8px; font-size: 13px; color: #9d174d; }
+
+.badge { display: inline-block; font-size: 11px; font-weight: bold; padding: 4px 10px; border-radius: 12px; }
+.badge.milik { background: #d1fae5; color: #065f46; }
+.badge.baca  { background: #fef3c7; color: #92400e; }
+.badge.beli  { background: #ede9fe; color: #5b21b6; }
+
+.book-actions { display: flex; gap: 8px; }
+.book-actions button { 
+  padding: 6px 14px; 
+  border: none; 
+  background: #fce7f3; 
+  color: #be185d;
+  border-radius: 6px; 
+  cursor: pointer; 
+  font-size: 12px; 
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.book-actions button:hover { background: #fbcfe8; }
+.book-actions button.danger { background: #ffe4e6; color: #e11d48; }
+.book-actions button.danger:hover { background: #fecdd3; }
+.empty-msg { text-align: center; color: #db2777; padding: 40px 0; font-style: italic; }
